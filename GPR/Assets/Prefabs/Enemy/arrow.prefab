@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 155716996777847515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c769092dc3b284fa16690cbb68b0d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c7f401445777cb4f98adee70ffc0757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
@@ -109,7 +109,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   movementSpeed: 15
-  rotationSpeed: 10
+  rotationSpeed: 5
 --- !u!54 &155716996777847518
 Rigidbody:
   m_ObjectHideFlags: 0

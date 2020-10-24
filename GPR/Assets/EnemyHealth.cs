@@ -8,10 +8,9 @@ public class EnemyHealth : MonoBehaviour
     public float health;
     public float maxHealth;
     public float damage;
-    public float lifetime = 1f;
+    //public float lifetime = 1f;
 
     public GameObject healthbarUI;
-    public Animation animateFeedback;
     public Slider slider1;
     public Slider slider2;
 
@@ -25,10 +24,9 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             health -= damage;
-            animateFeedback.Play("DMGAnim");
         }
 
         slider1.value = CalculateHealth();

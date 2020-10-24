@@ -260,56 +260,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &98356972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 98356973}
-  - component: {fileID: 98356974}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &98356973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98356972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1658235047}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &98356974
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98356972}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5ce25eef6499a114e9e25314d62054b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &101327038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,12 +1432,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3616809070288344287}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1658235047 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3616809069704395898, guid: 48f771eddd4ff634290a782bb54e7fb9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3616809070288344287}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660266226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2417,17 @@ PrefabInstance:
         type: 3}
       propertyPath: animateFeedback
       value: 
-      objectReference: {fileID: 98356972}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616809069704395896, guid: 48f771eddd4ff634290a782bb54e7fb9,
+        type: 3}
+      propertyPath: animateFeedbackClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 6d2ed907151e2944b8c2af5ffa91c5c7, type: 2}
+    - target: {fileID: 3616809069704395896, guid: 48f771eddd4ff634290a782bb54e7fb9,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3616809069704395898, guid: 48f771eddd4ff634290a782bb54e7fb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2584,11 +2538,26 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[10]
       value: 
       objectReference: {fileID: 1774918713}
+    - target: {fileID: 3616809069704395902, guid: 48f771eddd4ff634290a782bb54e7fb9,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3616809069704395903, guid: 48f771eddd4ff634290a782bb54e7fb9,
         type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7788186377055254452, guid: 48f771eddd4ff634290a782bb54e7fb9,
+        type: 3}
+      propertyPath: animateFeedbackClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 6d2ed907151e2944b8c2af5ffa91c5c7, type: 2}
+    - target: {fileID: 7788186377055254452, guid: 48f771eddd4ff634290a782bb54e7fb9,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 3616809070288344288}
     - target: {fileID: 8562926128178333489, guid: 48f771eddd4ff634290a782bb54e7fb9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2637,7 +2606,7 @@ Animator:
   m_GameObject: {fileID: 3616809070288344288}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d2828ae065b4704d85d9027b7c9e7d6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 189af823afa420144bb2d7406fc49657, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
