@@ -9,7 +9,7 @@ public class DamageDebug : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            healthScript.damage = 5f;
+            healthScript.damage = 10f;
             healthScript.GiveDamage();
         }
     }
