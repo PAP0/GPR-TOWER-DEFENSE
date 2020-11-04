@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ffba57296e6dd48b0ea534cad27815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animateFeedbackClip: {fileID: 0}
   healthBar: {fileID: 0}
 --- !u!1 &3616809069095737255
 GameObject:
@@ -416,7 +415,7 @@ GameObject:
   - component: {fileID: 3616809069704395902}
   - component: {fileID: 3616809069704395897}
   - component: {fileID: 3616809069704395896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,10 +554,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697557e1d18e39542bac45a74d1cea37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onGiveDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
   health: 100
   maxHealth: 100
   damage: 1
-  lifetime: 1
   healthbarUI: {fileID: 3616809070790244949}
   slider1: {fileID: 3616809070443287529}
   slider2: {fileID: 3616809069095737253}

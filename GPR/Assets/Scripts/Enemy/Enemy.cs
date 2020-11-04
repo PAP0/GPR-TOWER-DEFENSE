@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Health _health;
+    public EnemyHealth enemyHealth = null;
 
-    private void Awake()
+    void Awake()
     {
-        _health = GetComponent<Health>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 }

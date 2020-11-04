@@ -18,7 +18,7 @@ public class PlayerFeedback : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("True");
+            Debug.Log("Animate");
             healthBar.GetComponent<Animator>().Play("DMGAnim");
             //animateFeedback.Play(animateFeedbackClip.name);
             //animateFeedback.GetComponent<Animator>().Play(animateFeedbackClip.name, -1, 0);
